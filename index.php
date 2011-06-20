@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div class="container-body">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
@@ -31,5 +31,6 @@
 	<?php endif; ?>
 
 <?php get_sidebar(); ?>
+</div>
 
 <?php get_footer(); ?>

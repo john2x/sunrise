@@ -31,15 +31,11 @@ body {
 }
 
 /* header */
-#page-wrap {
-	width: 100%;
-	clear: both;
-}
-
 #header {
 	width: 70%;
 	margin-bottom: 4em;
 	float: left;
+	clear: right;
 }
 
 #header h1 {
@@ -100,8 +96,8 @@ body {
 }
 
 /* content */
-.entry {
-	float: left;
+.container-body {
+	clear: both;
 }
 
 h1.entry-title {
