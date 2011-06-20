@@ -32,7 +32,14 @@
 
 	<?php //comments_template(); ?>
 
-	<?php endwhile; endif; ?>
+	<?php endwhile; ?>
+
+	<div class="navigation">
+		<div class="next-posts"><?php next_post_link('%link', '&gt;') ?></div>
+		<div class="prev-posts"><?php previous_post_link('%link', '&lt;') ?></div>
+	</div>
+
+	<?php endif; ?>
 	
 <?php //get_sidebar(); ?>
 

@@ -107,6 +107,7 @@
 
 <body <?php body_class(); ?>>
 	
+<div id="page-wrap">
 	<div id="container-header">
 		<header id="header">
 			<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
