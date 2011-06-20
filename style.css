@@ -31,6 +31,11 @@ body {
 }
 
 /* header */
+#page-wrap {
+	width: 100%;
+	clear: both;
+}
+
 #header {
 	width: 70%;
 	margin-bottom: 4em;
@@ -39,24 +44,36 @@ body {
 
 #header h1 {
 	font-size: 4em;
+	background: rgba(255, 255, 255, 0.7);
+	display: inline;
+	letter-spacing: -3px;
+	padding: .1em;
 }
 
 #header h1 a {
-	color: #FFF;
+	color: #414141;
 	text-decoration: none;
 	font-weight: bold;
-	letter-spacing: -3px;
 }
 
 #header .description {
+	margin-top: 1em;
+}
+
+#header .description h2 {
 	font-size: 2em;
+	display: inline;
+	color: #414141;
 	font-weight: lighter;
 	font-style: italic;
+	letter-spacing: -2px;
+	padding: .1em;
+	background: rgba(255, 255, 255, 0.7);
 }
 
 /* .navigation */
 .navigation {
-	float: right;
+	float: left;
 	width: 30%;
 }
 
@@ -83,9 +100,21 @@ body {
 }
 
 /* content */
+.entry {
+	float: left;
+}
+
+h1.entry-title {
+	padding: .1em;
+	color: #FFF;
+	display: inline;
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight: bold;
+	background: rgba(65, 65, 65, 0.7);
+}
 /* Set photo attachment to fullscreen */
 .entry-content .entry-background {
-	visibility: hidden;
 	position: fixed;
 	top: -50%;
 	left: -50%;
