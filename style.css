@@ -102,15 +102,27 @@ body {
 
 h1.entry-title {
 	padding: .1em;
-	color: #FFF;
 	display: inline;
 	text-decoration: none;
 	font-size: 1.5em;
 	font-weight: bold;
+	line-height: 2em;
 	background: rgba(65, 65, 65, 0.7);
+}
+
+.entry-content p {
+	padding: .1em;
+	font-style: italic;
+	font-weight: lighter;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	max-width: 30%;
+	background: rgba(65, 65, 65, 0.7);
+	
 }
 /* Set photo attachment to fullscreen */
 .entry-content .entry-background {
+	visibility: hidden;
 	position: fixed;
 	top: -50%;
 	left: -50%;
