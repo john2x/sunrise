@@ -1,5 +1,5 @@
 		<footer id="footer" class="source-org vcard copyright">
-<small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?> | Using <?php $theme_data = get_theme_data(WP_CONTENT_DIR . '/themes/HTML5-Reset-Wordpress-Theme/style.css'); echo $theme_data['Title'] . ' by ' . $theme_data['Author']; ?> </small>
+<small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?> | Using <?php $theme_data = get_theme_data(WP_CONTENT_DIR . '/themes/sunrise/style.css'); echo $theme_data['Title'] . ' by ' . $theme_data['Author']; ?> </small>
 		</footer>
 
 	</div> <!-- close div#page-wrap -->
