@@ -32,15 +32,15 @@ body {
 	margin: 2em;
 }
 
-#page-wrap {min-height: 91%;
-	padding-bottom: 1em;
+#page-wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -2em;
 }
 
-#footer {
-	position: relative;
-	margin-top: -1em;
-	height: 1em;
-	clear: both;
+#footer, #push {
+	height: 2em;
 }
 
 a {
@@ -216,7 +216,6 @@ article a {
 	/*
 	position: absolute;
 	*/
-	padding: .2em 0;
 	background: rgba(65, 65, 65, 0.7);
 	display: block;
 	text-align: center;
@@ -235,6 +234,7 @@ article a {
 }
 
 #footer ul {
+	padding-top: .5em;
 }
 
 #footer ul li {

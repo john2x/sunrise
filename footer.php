@@ -15,7 +15,7 @@
 		</ul>
 		</small>
 
-	</footer>
+	</div>
 
 	<?php wp_footer(); ?>
 
