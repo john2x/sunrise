@@ -1,18 +1,21 @@
-		<footer id="footer" class="source-org vcard copyright">
-<small>
-<ul>
-<li class="first">&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></li>
-<li>Using <?php $theme_data = get_theme_data(WP_CONTENT_DIR . '/themes/sunrise/style.css'); echo $theme_data['Title'] . ' by ' . $theme_data['Author']; ?> </li>
-<?php wp_register(); ?>
-<li><?php wp_loginout(); ?></li>
-<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
-<li><a href="<?php bloginfo('rss2_url'); ?>">Entries (RSS)</a></li>
-<?php wp_meta(); ?>
-</ul>
-</small>
-		</footer>
-
 	</div> <!-- close div#page-wrap -->
+	<div id="push"></div>
+
+	<div id="footer" class="source-org vcard copyright">
+
+		<small>
+		<ul>
+		<li class="first">&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></li>
+		<li>Using <?php $theme_data = get_theme_data(WP_CONTENT_DIR . '/themes/sunrise/style.css'); echo $theme_data['Title'] . ' by ' . $theme_data['Author']; ?> </li>
+		<?php wp_register(); ?>
+		<li><?php wp_loginout(); ?></li>
+		<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+		<li><a href="<?php bloginfo('rss2_url'); ?>">Entries (RSS)</a></li>
+		<?php wp_meta(); ?>
+		</ul>
+		</small>
+
+	</footer>
 
 	<?php wp_footer(); ?>
 

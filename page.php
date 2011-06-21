@@ -17,7 +17,6 @@
 
 				<!--</div>-->
 
-				<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 			</div>
 
 		</article>
@@ -26,7 +25,7 @@
 
 		<?php endwhile; endif; ?>
 
-<?php //get_sidebar(); ?>
 </div>
 
+<?php //get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -26,14 +26,13 @@
 				</div>
 			</div>
 
+		</article>
+
 			<div class="navigation">
 				<div class="prev-post"><?php previous_post_link('%link', '&lt;') ?></div>
 				<!--<div class="edit-post"><?php edit_post_link('Edit','',''); ?></div>-->
 				<div class="next-post"><?php next_post_link('%link', '&gt;') ?></div>
 			</div>
-
-
-		</article>
 
 	<?php //comments_template(); ?>
 

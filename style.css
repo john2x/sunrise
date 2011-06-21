@@ -22,12 +22,25 @@ Version: 0.1
 -------------------------------------------------------------------------------*/
 @import url("reset.css");
 
+html, body {height: 100%; }
+
 body {
 	background: url("images/grid.png") repeat-y;
 	font-family: Helvetica, arial, sans-serif;
 	color: #FFF;
 	background-color: #CCC;
 	margin: 2em;
+}
+
+#page-wrap {min-height: 91%;
+	padding-bottom: 1em;
+}
+
+#footer {
+	position: relative;
+	margin-top: -1em;
+	height: 1em;
+	clear: both;
 }
 
 a {
@@ -42,6 +55,7 @@ a:hover {
 	background: rgba(65, 65, 65, 0.7);
 	padding: .1em;
 }
+
 
 /* header */
 #header {
@@ -199,10 +213,10 @@ article a {
 
 /* footer */
 #footer {
+	/*
 	position: absolute;
-	bottom: 2em;
-	width: 100%;
-	margin-left: -2em;
+	*/
+	padding: .2em 0;
 	background: rgba(65, 65, 65, 0.7);
 	display: block;
 	text-align: center;
