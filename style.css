@@ -98,6 +98,7 @@ a:hover {
 
 /* content */
 .container-body {
+	min-width: 30%;
 	max-width: 30%;
 	clear: both;
 }
@@ -198,10 +199,13 @@ article a {
 
 /* footer */
 #footer {
-	float: left;
+	position: absolute;
+	bottom: 2em;
 	width: 100%;
-	margin: 3em auto;
+	margin-left: -2em;
 	background: rgba(65, 65, 65, 0.7);
+	display: block;
+	text-align: center;
 }
 
 #footer a {
@@ -217,14 +221,10 @@ article a {
 }
 
 #footer ul {
-	display: inline;
-	padding: 1em;
-	
 }
 
 #footer ul li {
 	margin-left: 0;
-	padding: 3px .2em;
 	list-style: none;
 	display: inline;
 }
