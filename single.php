@@ -25,23 +25,23 @@
 					?>
 				</div>
 			</div>
-			
-			<?php edit_post_link('Edit this entry','','.'); ?>
-			
+
+			<div class="navigation">
+				<div class="prev-post"><?php previous_post_link('%link', '&lt;') ?></div>
+				<!--<div class="edit-post"><?php edit_post_link('Edit','',''); ?></div>-->
+				<div class="next-post"><?php next_post_link('%link', '&gt;') ?></div>
+			</div>
+
+
 		</article>
 
 	<?php //comments_template(); ?>
 
 	<?php endwhile; ?>
 
-	<div class="navigation">
-		<div class="next-posts"><?php next_post_link('%link', '&gt;') ?></div>
-		<div class="prev-posts"><?php previous_post_link('%link', '&lt;') ?></div>
-	</div>
-
 	<?php endif; ?>
 	
-<?php //get_sidebar(); ?>
-
 </div>
+<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

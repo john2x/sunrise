@@ -34,11 +34,13 @@ a {
 	color: #414141;
 	text-decoration: none;
 	background: rgba(255, 255, 255, 0.7);
+	padding: .1em;
 }
 a:hover {
 	color: #FFF;
 	text-decoration: none;
 	background: rgba(65, 65, 65, 0.7);
+	padding: .1em;
 }
 
 /* header */
@@ -51,15 +53,11 @@ a:hover {
 
 #header h1 {
 	font-size: 4em;
-	background: rgba(255, 255, 255, 0.7);
 	display: inline;
 	letter-spacing: -3px;
-	padding: .1em;
 }
 
 #header h1 a {
-	color: #414141;
-	text-decoration: none;
 	font-weight: bold;
 }
 
@@ -78,23 +76,21 @@ a:hover {
 	background: rgba(255, 255, 255, 0.7);
 }
 
-/* .navigation */
-.navigation {
+/* .menu */
+.menu {
 	float: left;
-	width: 30%;
 }
 
-.navigation ul {
+.menu ul {
 	line-height: 2em;
 }
 
-.navigation a {
-	padding: .1em;
+.menu a {
 	font-size: 1.5em;
 	font-weight: bold;
 }
 
-.navigation a:hover {
+.menu a:hover {
 	padding: .1em;
 	font-size: 1.5em;
 	font-weight: bold;
@@ -102,12 +98,12 @@ a:hover {
 
 /* content */
 .container-body {
+	max-width: 30%;
 	clear: both;
 }
 
 /* .article a (for "Edit this entry" link) */
 article a {
-	padding: .1em;
 	font-weight: bold;
 }
 
@@ -126,7 +122,6 @@ article a {
 	font-weight: lighter;
 	font-size: 1.5em;
 	line-height: 1.5em;
-	max-width: 30%;
 	background: rgba(65, 65, 65, 0.7);
 	margin: 1em 0;
 }
@@ -160,7 +155,7 @@ article a {
 
 /* Set photo attachment to fullscreen */
 .entry-content .entry-background {
-	visibility: hidden;
+	/*visibility: hidden;*/
 	position: fixed;
 	top: -50%;
 	left: -50%;
@@ -180,3 +175,55 @@ article a {
 	min-height: 50%;
 }
 
+/* post navigation */
+.navigation a {
+	font-size: 2em;
+	padding: .1em .4em;
+	line-height: 1.5em;
+}
+
+.navigation .prev-post { 
+	float: left;
+	margin-right: 1em;
+}
+
+.navigation .edit-post {
+	margin: auto;
+}
+
+.navigation .next-post { 
+	float: right;
+	margin-left: 1em;
+}
+
+/* sidebar */
+#sidebar {
+	float: left;
+	width: 100%;
+	margin: 3em auto;
+}
+
+#sidebar h2 {
+	display: inline;
+	padding: .1em;
+	background: rgba(65, 65, 65, 0.7);
+}
+
+#sidebar ul {
+	display: inline;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#sidebar ul li {
+	margin-left: 0;
+	padding: 3px .2em;
+	list-style: none;
+	display: inline;
+}
+
+/* footer */
+#footer {
+	float: left;
+	width: 100%;
+}
