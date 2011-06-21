@@ -108,11 +108,11 @@
 <body <?php body_class(); ?>>
 	
 <div id="page-wrap">
-	<div id="container-header">
-		<header id="header">
+	<div class="header">
+		<div id="header-logo">
 			<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
 			<div class="description"><h2><?php bloginfo('description'); ?></h2></div>
-		</header>
+		</div>
 		<div class="menu" id="access" role="navigation">
 			<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
 		</div>

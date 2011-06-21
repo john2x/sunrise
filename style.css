@@ -39,10 +39,6 @@ body {
 	margin: 0 auto -2em;
 }
 
-#footer, #push {
-	height: 2em;
-}
-
 a {
 	color: #414141;
 	text-decoration: none;
@@ -58,28 +54,28 @@ a:hover {
 
 
 /* header */
-#header {
+#header-logo {
 	width: 70%;
 	margin-bottom: 4em;
 	float: left;
 	clear: right;
 }
 
-#header h1 {
+#header-logo h1 {
 	font-size: 4em;
 	display: inline;
 	letter-spacing: -3px;
 }
 
-#header h1 a {
+#header-logo h1 a {
 	font-weight: bold;
 }
 
-#header .description {
+#header-logo .description {
 	margin-top: 1em;
 }
 
-#header .description h2 {
+#header-logo .description h2 {
 	font-size: 2em;
 	display: inline;
 	color: #414141;
@@ -111,7 +107,7 @@ a:hover {
 }
 
 /* content */
-.container-body {
+.body {
 	min-width: 30%;
 	max-width: 30%;
 	clear: both;
@@ -212,7 +208,11 @@ article a {
 }
 
 /* footer */
-#footer {
+.footer, #push {
+	height: 2em;
+}
+
+.footer {
 	/*
 	position: absolute;
 	*/
@@ -221,33 +221,33 @@ article a {
 	text-align: center;
 }
 
-#footer a {
+.footer a {
 	background: none;
 	color: #FFF;
 	text-decoration: underline;
 }
 
-#footer a:hover {
+.footer a:hover {
 	background: none;
 	color: #DDD;
 	text-decoration: underline;
 }
 
-#footer ul {
+.footer ul {
 	padding-top: .5em;
 }
 
-#footer ul li {
+.footer ul li {
 	margin-left: 0;
 	list-style: none;
 	display: inline;
 }
 
-#footer ul li:before {
+.footer ul li:before {
 	content: "\0020 \0020 \00BB \0020 \0020";
 }
 
-#footer ul li.first:before {
+.footer ul li.first:before {
 	content: " ";
 }
 

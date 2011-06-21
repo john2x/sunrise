@@ -1,7 +1,7 @@
 	</div> <!-- close div#page-wrap -->
 	<div id="push"></div>
 
-	<div id="footer" class="source-org vcard copyright">
+	<div class="footer">
 
 		<small>
 		<ul>
