@@ -196,34 +196,44 @@ article a {
 	margin-left: 1em;
 }
 
-/* sidebar */
-#sidebar {
+/* footer */
+#footer {
 	float: left;
 	width: 100%;
 	margin: 3em auto;
-}
-
-#sidebar h2 {
-	display: inline;
-	padding: .1em;
 	background: rgba(65, 65, 65, 0.7);
 }
 
-#sidebar ul {
-	display: inline;
-	margin-left: 0;
-	padding-left: 0;
+#footer a {
+	background: none;
+	color: #FFF;
+	text-decoration: underline;
 }
 
-#sidebar ul li {
+#footer a:hover {
+	background: none;
+	color: #DDD;
+	text-decoration: underline;
+}
+
+#footer ul {
+	display: inline;
+	padding: 1em;
+	
+}
+
+#footer ul li {
 	margin-left: 0;
 	padding: 3px .2em;
 	list-style: none;
 	display: inline;
 }
 
-/* footer */
-#footer {
-	float: left;
-	width: 100%;
+#footer ul li:before {
+	content: "\0020 \0020 \00BB \0020 \0020";
 }
+
+#footer ul li.first:before {
+	content: " ";
+}
+
