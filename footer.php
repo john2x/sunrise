@@ -12,6 +12,7 @@
 		<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
 		<li><a href="<?php bloginfo('rss2_url'); ?>">Entries (RSS)</a></li>
 		<?php wp_meta(); ?>
+		<li><a href="#">Hide Info</a></li>
 		</ul>
 		</small>
 
