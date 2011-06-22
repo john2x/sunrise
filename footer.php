@@ -20,7 +20,6 @@
 	<?php wp_footer(); ?>
 
 
-<!--
 <div class="background">
 	<?php 
 	 if ( has_post_thumbnail()) {
@@ -29,13 +28,14 @@
 	 }
 	?>
 </div>
--->
+<!--
 <?php 
  if ( has_post_thumbnail()) {
    $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large');
    echo '<img src="' . $large_image_url[0] . '" class="background"/>';
  }
 ?>
+-->
 <!-- here comes the javascript -->
 
 <!-- jQuery is called via the Wordpress-friendly way via functions.php -->

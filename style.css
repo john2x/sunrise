@@ -234,17 +234,17 @@ article footer.meta time {
 }
 
 /* BACKGROUND */
+/*
 img.background {
 	position:fixed;
 	top:0;
 	left:0; 
-	/* Preserve aspet ratio */
 	min-width:100%;
 	min-height:100%;
 	z-index: -1;
 }
+*/
 
-/* 
 .background {
 	position: fixed;
 	top: -50%;
@@ -264,5 +264,4 @@ img.background {
 	min-width: 50%;
 	min-height: 50%;
 }
-*/
 
