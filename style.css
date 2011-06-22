@@ -9,7 +9,7 @@ Version: 0.1
 
 @import url("reset.css");
 
-html, body {height: 100%; }
+html, body {height: 100%; width: 100%; overflow:hidden;}
 
 body {
 	background: url("images/grid.png") repeat-y;
@@ -256,6 +256,7 @@ img.background {
 }
 */
 
+/*
 .background {
 	position: fixed;
 	top: -50%;
@@ -275,4 +276,16 @@ img.background {
 	min-width: 50%;
 	min-height: 50%;
 }
+	*/
+img.background {
+	z-index: -999;
+	min-height: 100%;
+	/*min-width: (applied in footer.php since it is dynamic);*/
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
 
