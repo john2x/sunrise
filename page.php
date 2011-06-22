@@ -4,20 +4,20 @@
 			
 		<article class="post" id="post-<?php the_ID(); ?>">
 
-			<div class="entry-content">
-				<h1 class="entry-title"><?php the_title(); ?></h1>
+				<h1 class="post-title"><?php the_title(); ?></h1>
 
 				<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
 
 				<!--<div class="entry">-->
 
+				<div id="content-wrapper">
 					<?php the_content(); ?>
+				</div>
 
 					<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
 
 				<!--</div>-->
 
-			</div>
 
 		</article>
 		

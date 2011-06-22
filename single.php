@@ -4,11 +4,12 @@
 
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			
-			<div class="entry-content">
 				
-				<h1 class="entry-title"><?php the_title(); ?></h1>
+				<h1 class="post-title"><?php the_title(); ?></h1>
 
-				<?php the_content(); ?>
+				<div id="content-wrapper">
+					<?php the_content(); ?>
+				</div>
 
 				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
 				
@@ -16,7 +17,7 @@
 			
 				<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
 
-				<div class="entry-background">
+				<div class="background">
 					<?php 
 					 if ( has_post_thumbnail()) {
 					   $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large');
@@ -24,7 +25,6 @@
 					 }
 					?>
 				</div>
-			</div>
 
 		</article>
 
