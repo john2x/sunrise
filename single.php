@@ -17,15 +17,6 @@
 			
 				<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
 
-				<div class="background">
-					<?php 
-					 if ( has_post_thumbnail()) {
-					   $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large');
-					   echo '<img src="' . $large_image_url[0] . '"/>';
-					 }
-					?>
-				</div>
-
 		</article>
 
 			<div class="navigation">
@@ -44,3 +35,4 @@
 <?php //get_sidebar(); ?>
 
 <?php get_footer(); ?>
+

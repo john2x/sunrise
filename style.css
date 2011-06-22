@@ -7,19 +7,6 @@ Author URI: http://john2x.com
 Version: 0.1
 */
 
-/*
-	HTML5 Reset Wordpress Theme :: style.css
-	----------------------------------------------------------
-	We have learned much from/been inspired by/taken code where offered from:
-	
-	Eric Meyer					:: http://ericmeyer.com
-	HTML5 Doctor				:: http://html5doctor.com
-	and the HTML5 Boilerplate	:: http://html5boilerplate.com
-	
-	Special thanks: The Wordpress theme owes its start to an empty theme authored 
-		by Chris Coyier & Jeff Starr: http://digwp.com
-	
--------------------------------------------------------------------------------*/
 @import url("reset.css");
 
 html, body {height: 100%; }
@@ -54,8 +41,10 @@ a:hover {
 	padding: .1em;
 }
 
-
-/* header */
+/**********
+ * HEADER *
+ **********/
+/* LOGO */
 #header-logo {
 	width: 70%;
 	padding-bottom: 4em;
@@ -65,7 +54,6 @@ a:hover {
 
 #header-logo h1 {
 	font-size: 4em;
-	display: inline;
 	letter-spacing: -3px;
 }
 
@@ -79,7 +67,6 @@ a:hover {
 
 #header-logo .description h2 {
 	font-size: 2em;
-	display: inline;
 	color: #414141;
 	font-weight: lighter;
 	font-style: italic;
@@ -88,7 +75,7 @@ a:hover {
 	background: rgba(255, 255, 255, 0.7);
 }
 
-/* .menu */
+/* MENU */
 .menu {
 	float: left;
 }
@@ -108,20 +95,17 @@ a:hover {
 	font-weight: bold;
 }
 
-/* content */
+/********
+ * BODY *
+ ********/
 .body {
 	min-width: 30%;
 	max-width: 30%;
 	clear: both;
 }
 
-/* .article a (for "Edit this entry" link) */
-article a {
-	font-weight: bold;
-}
-
+/* POST TITLE */
 article .post-title {
-	display: inline;
 	text-decoration: none;
 	font-size: 1.5em;
 	font-weight: bold;
@@ -144,6 +128,7 @@ article .post-title a:hover {
 	color: #414141;
 }
 
+/* POST CONTENT */
 article #content-wrapper {
 	padding: 2em 0;
 }
@@ -176,7 +161,6 @@ article footer.meta {
 }
 
 article footer.meta time {
-	display: inline;
 	padding: .1em;
 	background: rgba(65, 65, 65, 0.7);
 	font-style: italic;
@@ -184,29 +168,7 @@ article footer.meta time {
 	font-size: 1.5em;
 }
 
-/* Set photo attachment to fullscreen */
-article .background {
-	/*visibility: hidden;*/
-	position: fixed;
-	top: -50%;
-	left: -50%;
-	width: 200%;
-	height: 200%;
-	z-index: -1;
-}
-
-article .background img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
-	min-width: 50%;
-	min-height: 50%;
-}
-
-/* post navigation */
+/* PREV/NEXT LINKS */
 .navigation a {
 	font-size: 2em;
 	padding: .1em .4em;
@@ -226,7 +188,9 @@ article .background img {
 	margin-left: 1em;
 }
 
-/* footer */
+/**********
+ * FOOTER *
+ **********/
 .footer, #push {
 	height: 2em;
 }
@@ -268,4 +232,37 @@ article .background img {
 .footer ul li.first:before {
 	content: " ";
 }
+
+/* BACKGROUND */
+img.background {
+	position:fixed;
+	top:0;
+	left:0; 
+	/* Preserve aspet ratio */
+	min-width:100%;
+	min-height:100%;
+	z-index: -1;
+}
+
+/* 
+.background {
+	position: fixed;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	z-index: -1;
+}
+
+.background img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	min-width: 50%;
+	min-height: 50%;
+}
+*/
 
