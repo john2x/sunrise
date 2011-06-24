@@ -1,0 +1,17 @@
+/* special CSS for Opera */
+img.background {
+	z-index: -999;
+	min-height: 100%;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+        img.background {
+                left: 50%;
+                margin-left: -512px;   /* 50% */
+        }
+}
+

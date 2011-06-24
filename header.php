@@ -93,6 +93,12 @@
 	
 	<!-- CSS: screen, mobile & print are all in the same file -->
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+	<!-- Use PHP to check if the user's browser is Opera to use a different CSS for setting full backround images -->
+	<?php
+		if (strpos($_SERVER['HTTP_USER_AGENT'], 'Opera') === 0){
+			echo '<link rel="stylesheet" href="'.get_bloginfo('stylesheet_directory').'/opera.css">';
+		}
+	?>	
 	
 	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
 	<script src="<?php bloginfo('template_directory'); ?>/_/js/modernizr-1.7.min.js"></script>
