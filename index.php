@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="body">
+<div class="body-index">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
@@ -8,11 +8,9 @@
 
 			<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
 
-			<!--
-			<div class="entry">
+			<div class="content-wrapper">
 				<?php the_content(); ?>
 			</div>
-			-->
 
 			<footer class="postmetadata">
 				<?php the_tags('Tags: ', ', ', '<br />'); ?>

@@ -6,7 +6,7 @@
 
 				<h1 class="post-title"><?php the_title(); ?></h1>
 
-				<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
+				<?php //include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
 
 				<!--<div class="entry">-->
 

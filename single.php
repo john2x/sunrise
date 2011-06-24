@@ -7,7 +7,7 @@
 				
 				<h1 class="post-title"><?php the_title(); ?></h1>
 
-				<div id="content-wrapper">
+				<div class="content-wrapper">
 					<?php the_content(); ?>
 				</div>
 

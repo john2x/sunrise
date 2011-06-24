@@ -12,17 +12,17 @@ Version: 0.1
 html, body {height: 100%; width: 100%;}
 
 body {
-	background: url("images/grid.png") repeat-y;
+	/*background: url("images/grid.png") repeat-y;*/
 	font-family: Helvetica, arial, sans-serif;
 	color: #FFF;
-	background-color: #CCC;
+	background-color: #FFF;
 }
 
 #page-wrap {
 	min-height: 97%;
 	height: auto !important;
 	height: 100%;
-	margin-top: 2em;
+	padding-top: 2em;
 	margin-bottom: -2em;
 	margin-left: 2em;
 	margin-right: 2em;
@@ -102,7 +102,7 @@ a:hover {
 /********
  * BODY *
  ********/
-.body {
+.body, .body-index {
 	min-width: 30%;
 	max-width: 30%;
 	clear: both;
@@ -137,12 +137,12 @@ article .post-title a:hover {
 }
 
 /* POST CONTENT */
-article #content-wrapper {
-	padding: 2em 0;
+.body article .content-wrapper {
+	padding: 1em 0;
 	padding-top: 2.5em;
 }
 
-article p {
+.body article p {
 	padding: .1em;
 	font-style: italic;
 	font-weight: lighter;
@@ -150,9 +150,10 @@ article p {
 	line-height: 1.5em;
 	background: rgb(65, 65, 65);
 	background: rgba(65, 65, 65, 0.7);
+	display: inline;
 }
 
-article p a {
+.body article p a {
 	text-decoration: underline;
 	color: inherit;
 	font-weight: normal;
@@ -160,7 +161,7 @@ article p a {
 	background: rgba(65, 65, 65, 0.0);
 }
 
-article p a:hover {
+.body article p a:hover {
 	text-decoration: underline;
 	color: #DDD;
 	font-weight: normal;
@@ -168,11 +169,11 @@ article p a:hover {
 	background: rgba(65, 65, 65, 0.0);
 }
 
-article footer.meta {
+article .meta {
 	padding: 1em 0;
 }
 
-article footer.meta time {
+article .meta time {
 	padding: .1em;
 	background: rgb(65, 65, 65);
 	background: rgba(65, 65, 65, 0.7);
@@ -180,6 +181,26 @@ article footer.meta time {
 	font-weight: lighter;
 	font-size: 1.5em;
 }
+
+/* for index.php */
+.body-index .post-title {
+}
+.body-index .content-wrapper {
+	padding-bottom: 2em;
+}
+.body-index .meta time {
+	font-size: 1em;
+}
+.body-index article p {
+	padding: .1em;
+	font-style: italic;
+	font-weight: lighter;
+	line-height: 1.3em;
+	display: inline;
+	background: rgb(65, 65, 65);
+	background: rgba(65, 65, 65, 0.7);
+}
+
 
 /* PREV/NEXT LINKS */
 .navigation {
@@ -192,13 +213,13 @@ article footer.meta time {
 	padding: 0 .2em;
 }
 
-.navigation .prev-post { 
+.navigation .prev-post, .prev-posts { 
 	position: fixed;
 	left: 0;
 	top: 50%;
 }
 
-.navigation .next-post { 
+.navigation .next-post, .next-posts { 
 	position: fixed;
 	right: 0;
 	top: 50%;
@@ -234,6 +255,7 @@ article footer.meta time {
 
 .footer ul {
 	padding-top: .5em;
+	padding-bottom: 0;
 }
 
 .footer ul li {
