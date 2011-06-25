@@ -1,6 +1,7 @@
 #  Sunrise
 ## A photo blogging theme
 * * * *
+**[DEMO](http://john2x.com/wordpress)**
 ## Features: 
 - Full background photos
 - Simple and minimalist design
@@ -23,6 +24,7 @@ Background pattern from [Subtle Patterns](http://subtlepatterns.com/).
 
 * * * *
 For comments, bugs and suggestions:
+
 - [Tweet](http://twitter.com/john2x)
 - [Email](mailto:john2x.com)
 - File an issue at [Bitbucket](https://bitbucket.org/john2x/sunrise/issues) or [Github]()
