@@ -30,6 +30,19 @@
 	<?php endwhile; ?>
 
 	<?php endif; ?>
+<?php
+	if (strpos($_SERVER['HTTP_USER_AGENT'], 'Opera') === 0){
+		 if ( has_post_thumbnail()) {
+		   $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large');
+		   echo '<img src="' . $large_image_url[0] . '" class="background" style="min-width:' . $large_image_url[1] . 'px !important;"/>';
+		 }
+	 } else {
+		 if ( has_post_thumbnail()) {
+		   $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large');
+		   echo '<div class="background"><img src="' . $large_image_url[0] . '"/></div>';
+		 }
+	 }
+?>
 	
 </div>
 <?php //get_sidebar(); ?>
