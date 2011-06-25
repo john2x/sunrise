@@ -12,7 +12,7 @@
 		<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
 		<li><a href="<?php bloginfo('rss2_url'); ?>" title="Subscribe to RSS">Entries (RSS)</a></li>
 		<?php wp_meta(); ?>
-		<li><a href="#" title="Toggle information overlay. ">Show/hide Info</a></li>
+		<li><a href="#" title="Toggle information overlay. " id="info-toggle">Show/hide Info</a></li>
 		</ul>
 		</small>
 
@@ -31,6 +31,18 @@
 
 <!-- this is where we put our custom functions -->
 <script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script>
+
+<script type"text/javascript">
+	var hidden = false;
+	$("#info-toggle").click(function() { 
+		if (hidden) {
+			$(".body>article").fadeIn(); 
+		} else {
+			$(".body>article").fadeOut(); 
+		}
+		hidden = !hidden
+	});
+</script>
 
 <!-- Asynchronous google analytics; this is the official snippet.
 	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
