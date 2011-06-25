@@ -5,6 +5,13 @@ Description: An experimental photoblogging theme.
 Author: John Louis del Rosario
 Author URI: http://john2x.com
 Version: 0.1
+----------------------------------------------------
+Special thanks to:
+This theme started from ["HTML5 Reset Wordpress Theme"](https://github.com/murtaugh/HTML5-Reset-Wordpress-Theme).
+
+Using Eric Meyer's [reset.css](http://meyerweb.com/eric/tools/css/reset/).
+
+Background pattern from [Subtle Patterns](http://subtlepatterns.com/).
 */
 
 @import url("reset.css");
