@@ -4,7 +4,7 @@ Theme URI: http://john2x.com
 Description: An experimental photoblogging theme. 
 Author: John Louis del Rosario
 Author URI: http://john2x.com
-Version: 1.0.0
+Version: 1.0.1
 ----------------------------------------------------
 Special thanks to:
 This theme started from ["HTML5 Reset Wordpress Theme"](https://github.com/murtaugh/HTML5-Reset-Wordpress-Theme).
@@ -25,6 +25,9 @@ body {
 	color: #FFF;
 }
 
+@media screen and (max-width:1024px){
+	body { font-size: 0.8em;}
+}
 #page-wrap {
 	min-height: 97%;
 	height: auto !important;
