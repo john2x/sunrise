@@ -42,6 +42,8 @@
 		}
 		hidden = !hidden
 	});
+
+	// tooltips
 </script>
 
 <!-- Asynchronous google analytics; this is the official snippet.

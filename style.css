@@ -216,19 +216,26 @@ article .meta time {
 	clear: left;
 	max-width: 960px;
 	margin: 0 auto;
+	padding-left: auto;
 }
 
 .body-index ul.thumbnails {
 	position: relative;
 	width: 100%;
 	list-style: none;
+	left: 75px;
 }
 
 .body-index ul.thumbnails li {
 	float: left;
 	width: 150px;
 	height: 150px;
-	margin: 0 10px 10px 0;
+	margin: 0 15px 15px 0;
+}
+
+.body-index ul.thumbnails li img {
+	border: 5px solid #FFF;
+	margin: -5px;
 }
 
 .body-index ul.thumbnails li a {
@@ -243,6 +250,11 @@ article .meta time {
 	text-decoration: none;
 	background: none;
 	padding: 0;
+}
+
+.body-index ul.thumbnails li a:hover img {
+	border: 5px solid #414141;
+	margin: -5px;
 }
 
 /* for page.php */
