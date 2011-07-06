@@ -112,7 +112,7 @@ a:hover {
 /********
  * BODY *
  ********/
-.body, .body-index, .body-404 {
+.body, .body-page, .body-index, .body-404 {
 	min-width: 30%;
 	max-width: 50%;
 	clear: both;
@@ -152,7 +152,7 @@ article .post-title a:hover {
 	padding-top: 2.5em;
 }
 
-.body article p {
+.body article p{
 	padding: .1em;
 	font-style: italic;
 	font-weight: lighter;
@@ -163,7 +163,7 @@ article .post-title a:hover {
 	display: inline;
 }
 
-.body article p a {
+.body article p a, .body-page article p a{
 	text-decoration: underline;
 	color: inherit;
 	font-weight: normal;
@@ -171,7 +171,7 @@ article .post-title a:hover {
 	background: rgba(65, 65, 65, 0.0);
 }
 
-.body article p a:hover {
+.body article p a:hover, .body-page article p a:hover {
 	text-decoration: underline;
 	color: #DDD;
 	font-weight: normal;
@@ -209,6 +209,18 @@ article .meta time {
 	display: inline;
 	background: rgb(65, 65, 65);
 	background: rgba(65, 65, 65, 0.7);
+}
+
+/* for page.php */
+.body-page article p {
+	padding: .1em;
+	font-style: italic;
+	font-weight: lighter;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	background: rgb(65, 65, 65);
+	background: rgba(65, 65, 65, 0.7);
+	margin-top: 1em;
 }
 
 /* for 404.php */

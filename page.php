@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="body">
+<div class="body-page">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			
 		<article class="post" id="post-<?php the_ID(); ?>">
