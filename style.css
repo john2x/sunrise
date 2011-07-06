@@ -163,7 +163,7 @@ article .post-title a:hover {
 	display: inline;
 }
 
-.body article p a, .body-page article p a{
+.body article p a, .body-page article p a {
 	text-decoration: underline;
 	color: inherit;
 	font-weight: normal;
@@ -213,21 +213,36 @@ article .meta time {
 }
 
 .body-index .gallery {
-	width: 70%;
+	clear: left;
+	max-width: 960px;
 	margin: 0 auto;
 }
 
-ul.thumbnails {
+.body-index ul.thumbnails {
 	position: relative;
 	width: 100%;
 	list-style: none;
 }
 
-ul.thumbnails li {
+.body-index ul.thumbnails li {
 	float: left;
 	width: 150px;
 	height: 150px;
 	margin: 0 10px 10px 0;
+}
+
+.body-index ul.thumbnails li a {
+	color: #414141;
+	text-decoration: none;
+	background: none;
+	padding: 0;
+}
+
+.body-index ul.thumbnails li a:hover {
+	color: #414141;
+	text-decoration: none;
+	background: none;
+	padding: 0;
 }
 
 /* for page.php */
@@ -237,9 +252,9 @@ ul.thumbnails li {
 	font-weight: lighter;
 	font-size: 1.5em;
 	line-height: 1.5em;
+	margin: 1em 0;
 	background: rgb(65, 65, 65);
 	background: rgba(65, 65, 65, 0.7);
-	margin-top: 1em;
 }
 
 /* for 404.php */
