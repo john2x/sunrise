@@ -6,7 +6,7 @@
 		<li <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<?php if ( has_post_thumbnail()) {
 			   $thumbnail_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail');
-			   echo '<a href="' . get_permalink() . '"><img class="thumbnail" src="' . $thumbnail_url[0] . '" title="' . get_the_title() . '"/></a>';
+			   echo '<a href="' . get_permalink() . '"><div class="thumbnail-overlay"><strong>' . get_the_title() . '</strong></div><img class="thumbnail" src="' . $thumbnail_url[0] . '" title="' . get_the_title() . '"/></a>';
 			 }
 			?>
 		</li>

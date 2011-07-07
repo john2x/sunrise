@@ -255,6 +255,23 @@ article .meta time {
 	box-shadow: -2.5px 2.5px 5px #ccc;
 }
 
+.body-index ul.thumbnails li .thumbnail-overlay {
+	visibility: hidden;
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.7);
+	text-align: center;
+	color: #414141;
+	margin: 0 auto;
+}
+
+.body-index ul.thumbnails li .thumbnail-overlay strong {
+	position: relative;
+	top: 50%;
+}
+
 .body-index ul.thumbnails li a {
 	color: #414141;
 	text-decoration: none;
@@ -269,12 +286,8 @@ article .meta time {
 	padding: 0;
 }
 
-.body-index ul.thumbnails li a:hover img {
-	border: 5px solid #414141;
-	margin: -5px;
-	-moz-box-shadow: -2.5px 2.5px 5px #ccc;
-	-webkit-box-shadow: -2.5px 2.5px 5px #ccc;
-	box-shadow: -2.5px 2.5px 5px #ccc;
+.body-index ul.thumbnails li a:hover .thumbnail-overlay {
+	visibility: visible;
 }
 
 /* for page.php */
