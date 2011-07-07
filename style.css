@@ -4,7 +4,7 @@ Theme URI: http://john2x.com
 Description: An experimental photoblogging theme. 
 Author: John Louis del Rosario
 Author URI: http://john2x.com
-Version: 1.0.1
+Version: 1.1.0
 ----------------------------------------------------
 Special thanks to:
 This theme started from ["HTML5 Reset Wordpress Theme"](https://github.com/murtaugh/HTML5-Reset-Wordpress-Theme).
@@ -12,6 +12,19 @@ This theme started from ["HTML5 Reset Wordpress Theme"](https://github.com/murta
 Using Eric Meyer's [reset.css](http://meyerweb.com/eric/tools/css/reset/).
 
 Background pattern from [Subtle Patterns](http://subtlepatterns.com/).
+----------------------------------------------------
+Changes:
+========
+1.1.0
+-----
+- Thumbnails for index page
+- Cleaner pages
+
+* * * *
+
+1.0.0
+-----
+- first version
 */
 
 @import url("reset.css");
@@ -112,7 +125,7 @@ a:hover {
 /********
  * BODY *
  ********/
-.body, .body-page, .body-index, .body-404 {
+.body, .body-page, .body-404 {
 	min-width: 30%;
 	max-width: 50%;
 	clear: both;
@@ -163,7 +176,7 @@ article .post-title a:hover {
 	display: inline;
 }
 
-.body article p a, .body-page article p a{
+.body article p a, .body-page article p a {
 	text-decoration: underline;
 	color: inherit;
 	font-weight: normal;
@@ -193,7 +206,9 @@ article .meta time {
 }
 
 /* for index.php */
-.body-index .post-title {
+.body-index {
+	width: 100%;
+	margin: 25% auto;
 }
 .body-index .content-wrapper {
 	padding-bottom: 2em;
@@ -211,6 +226,57 @@ article .meta time {
 	background: rgba(65, 65, 65, 0.7);
 }
 
+.body-index .gallery {
+	clear: both;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.body-index ul.thumbnails {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	list-style: none;
+	left: 75px;
+}
+
+.body-index ul.thumbnails li {
+	float: left;
+	width: 150px;
+	height: 150px;
+	margin: 0 15px 15px 0;
+}
+
+.body-index ul.thumbnails li img {
+	border: 5px solid #FFF;
+	margin: -5px;
+	-moz-box-shadow: -2.5px 2.5px 5px #ccc;
+	-webkit-box-shadow: -2.5px 2.5px 5px #ccc;
+	box-shadow: -2.5px 2.5px 5px #ccc;
+}
+
+.body-index ul.thumbnails li a {
+	color: #414141;
+	text-decoration: none;
+	background: none;
+	padding: 0;
+}
+
+.body-index ul.thumbnails li a:hover {
+	color: #414141;
+	text-decoration: none;
+	background: none;
+	padding: 0;
+}
+
+.body-index ul.thumbnails li a:hover img {
+	border: 5px solid #414141;
+	margin: -5px;
+	-moz-box-shadow: -2.5px 2.5px 5px #ccc;
+	-webkit-box-shadow: -2.5px 2.5px 5px #ccc;
+	box-shadow: -2.5px 2.5px 5px #ccc;
+}
+
 /* for page.php */
 .body-page article p {
 	padding: .1em;
@@ -218,9 +284,9 @@ article .meta time {
 	font-weight: lighter;
 	font-size: 1.5em;
 	line-height: 1.5em;
+	margin: 1em 0;
 	background: rgb(65, 65, 65);
 	background: rgba(65, 65, 65, 0.7);
-	margin-top: 1em;
 }
 
 /* for 404.php */
