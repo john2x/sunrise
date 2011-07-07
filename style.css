@@ -195,6 +195,7 @@ article .meta time {
 /* for index.php */
 .body-index {
 	width: 100%;
+	margin: 25% auto;
 }
 .body-index .content-wrapper {
 	padding-bottom: 2em;
