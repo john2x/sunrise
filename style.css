@@ -208,7 +208,6 @@ article .meta time {
 /* for index.php */
 .body-index {
 	width: 100%;
-	margin: 25% auto;
 }
 .body-index .content-wrapper {
 	padding-bottom: 2em;
@@ -229,15 +228,16 @@ article .meta time {
 .body-index .gallery {
 	clear: both;
 	max-width: 960px;
+	height: 400px;
 	margin: 0 auto;
 }
 
 .body-index ul.thumbnails {
 	position: relative;
 	width: 100%;
-	height: 100%;
 	list-style: none;
 	left: 75px;
+	top: 25%;
 }
 
 .body-index ul.thumbnails li {
