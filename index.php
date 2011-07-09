@@ -32,6 +32,7 @@
 		<h2>Not Found</h2>
 
 	<?php endif; ?>
+	<div class="gallery-push"></div>
 	</div>
 
 <?php //get_sidebar(); ?>

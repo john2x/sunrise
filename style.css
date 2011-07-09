@@ -228,7 +228,9 @@ article .meta time {
 .body-index .gallery {
 	clear: both;
 	max-width: 960px;
-	height: 400px;
+	height: 600px;
+	max-height: 600px;
+	padding-bottom: 2em;
 	margin: 0 auto;
 }
 
@@ -237,7 +239,7 @@ article .meta time {
 	width: 100%;
 	list-style: none;
 	left: 75px;
-	top: 25%;
+	top: 20%;
 }
 
 .body-index ul.thumbnails li {
@@ -277,6 +279,11 @@ article .meta time {
 	text-decoration: none;
 	background: none;
 	padding: 0;
+}
+
+.body-index .gallery-push {
+	clear: both;
+	height: 2em;
 }
 
 .body-index ul.thumbnails li a:hover {
@@ -359,6 +366,7 @@ article .meta time {
  **********/
 .footer, #push {
 	height: 2em;
+	clear: both;
 }
 
 .footer {
