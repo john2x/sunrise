@@ -350,6 +350,17 @@ article .meta time {
 	list-style-position: inside;
 	list-style-type: decimal;
 }
+.body-page article blockquote p {
+	padding: .3em;
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 1.1em;
+	line-height: 1.1em;
+	margin: 1em 0;
+	text-align: center;
+	background: rgb(65, 65, 65);
+	background: rgba(65, 65, 65, 0.7);
+}
 
 /* for 404.php */
 .body-404 {
