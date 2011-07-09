@@ -300,13 +300,55 @@ article .meta time {
 /* for page.php */
 .body-page article p {
 	padding: .1em;
-	font-style: italic;
+	font-style: normal;
 	font-weight: lighter;
-	font-size: 1.5em;
-	line-height: 1.5em;
+	font-size: 1.1em;
+	line-height: 1.1em;
 	margin: 1em 0;
 	background: rgb(65, 65, 65);
 	background: rgba(65, 65, 65, 0.7);
+}
+
+.body-page article h2 {
+	padding: .1em;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.4em;
+	line-height: 1.2em;
+	margin: 1em 0;
+	background: rgb(65, 65, 65);
+	background: rgba(65, 65, 65, 0.7);
+}
+.body-page article h3 {
+	padding: .1em;
+	font-weight: lighter;
+	font-size: 1.3em;
+	line-height: 1.2em;
+	margin: 1em 0;
+	background: rgb(65, 65, 65);
+	background: rgba(65, 65, 65, 0.7);
+}
+.body-page article ul {
+	padding: .1em .1em .1em 1em;
+	font-weight: lighter;
+	font-size: 1.1em;
+	line-height: 1.1em;
+	margin: 1em 0;
+	background: rgb(65, 65, 65);
+	background: rgba(65, 65, 65, 0.7);
+	list-style-position: inside;
+	list-style-type: disc;
+}
+.body-page article ol {
+	padding: .1em .1em .1em 1em;
+	font-weight: lighter;
+	font-size: 1.1em;
+	line-height: 1.1em;
+	margin: 1em 0;
+	background: rgb(65, 65, 65);
+	background: rgba(65, 65, 65, 0.7);
+	list-style-position: inside;
+	list-style-type: decimal;
 }
 
 /* for 404.php */
