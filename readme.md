@@ -7,7 +7,7 @@
 - Simple and minimalist design
 - Use Wordpress' "Featured Image" for your photos
 - "Show/Hide Info" toggle for a better view of your photos
-- Uses some HTML5 features
+- Display thumbnails on homepage for better viewing **version 1.1.0**
 
 ## Limitations:
 - Categories don't work (yet)
